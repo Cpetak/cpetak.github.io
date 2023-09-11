@@ -12,6 +12,9 @@ Disclaimer: I use the word "modifier" to mean "high noise modifier" a lot. Like 
 
 ## Methods
 
+Here is the link to the collab: https://colab.research.google.com/drive/1dn2mUJx-DqVHKmBXxoBbDd0fMNplXw_D?usp=sharing.
+Note: parameter sweep experiments were done on a server but it used the same code slightly restructured such that different combinations of parameters can be tested in parallel.
+
 I have written a very simple piece of python code. Each individual in the population has 2 loci, one that is considered for determining the fitness and one that I call modifier locus, which determines the phenotypic variability. I had to make a lot of arbitrary decisions and assumptions, but I think for the sake of just visualizing our point in the paper, it is good enough. See code below for detail.
 
 ```{python, eval=FALSE, python.reticulate = FALSE}
