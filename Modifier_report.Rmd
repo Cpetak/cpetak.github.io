@@ -70,11 +70,34 @@ That is it! So in English, I create a bunch of individuals that all start from t
 
 Here are some visualisations to illustrate the point. Developmental modifier, Blue high noise modifier, orange low noise modifier, triangle selected for reproduction. Density plot on the right: distribution of phenotypes for each of the modifier alleles. Blue is wider but the mean is the same, as in this run prob of negative and positive mutation were the same. note no change in average phenotype over time. y axis: phenotype, x axis: index of the individual in the population, ignore.
 
+With mut_bias == 1, 15% of the variation will be positive, for both high and low noise modifiers. I think this makes sense, but I am curious to hear what you think of this choice. Below are the distributions the random "mutations" are drawn from. 
+
+![Distributions](distrs.png)
+
+
+
 ![Gen 0](dev_0.png) ![Gen 1](dev_1.png) ![Gen 2](dev_2.png)
 
 Same but reproduction modifier. Note: average phenotype is increasing AND modifiers are able to gain more of an advantage then before. intuitive, they get to keep the advantage over the generations.
 
 ![Gen 0](rep_0.png) ![Gen 1](rep_1.png) ![Gen 2](rep_2.png)
+
+Same as above but with the 15% mut bias, developmental modifier:
+
+```{r}
+library(embedr)
+embed_video(
+  "myvid.mp4",
+  type = "mp4",
+  width = "320",
+  height = "240",
+  attribute = c("controls", "autoplay", "loop", "muted", "preload", "none"),
+  thumbnail = NULL,
+  id = "",
+  placeholder = ""
+)
+```
+
 
 ## Results
 
