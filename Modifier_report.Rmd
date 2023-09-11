@@ -12,8 +12,7 @@ Disclaimer: I use the word "modifier" to mean "high noise modifier" a lot. Like 
 
 ## Methods
 
-Here is the link to the collab: https://colab.research.google.com/drive/1dn2mUJx-DqVHKmBXxoBbDd0fMNplXw_D?usp=sharing.
-Note: parameter sweep experiments were done on a server but it used the same code slightly restructured such that different combinations of parameters can be tested in parallel.
+Here is the link to the collab: <https://colab.research.google.com/drive/1dn2mUJx-DqVHKmBXxoBbDd0fMNplXw_D?usp=sharing>. Note: parameter sweep experiments were done on a server but it used the same code slightly restructured such that different combinations of parameters can be tested in parallel.
 
 I have written a very simple piece of python code. Each individual in the population has 2 loci, one that is considered for determining the fitness and one that I call modifier locus, which determines the phenotypic variability. I had to make a lot of arbitrary decisions and assumptions, but I think for the sake of just visualizing our point in the paper, it is good enough. See code below for detail.
 
@@ -70,11 +69,9 @@ That is it! So in English, I create a bunch of individuals that all start from t
 
 Here are some visualisations to illustrate the point. Developmental modifier, Blue high noise modifier, orange low noise modifier, triangle selected for reproduction. Density plot on the right: distribution of phenotypes for each of the modifier alleles. Blue is wider but the mean is the same, as in this run prob of negative and positive mutation were the same. note no change in average phenotype over time. y axis: phenotype, x axis: index of the individual in the population, ignore.
 
-With mut_bias == 1, 15% of the variation will be positive, for both high and low noise modifiers. I think this makes sense, but I am curious to hear what you think of this choice. Below are the distributions the random "mutations" are drawn from. 
+With mut_bias == 1, 15% of the variation will be positive, for both high and low noise modifiers. I think this makes sense, but I am curious to hear what you think of this choice. Below are the distributions the random "mutations" are drawn from.
 
 ![Distributions](distrs.png)
-
-
 
 ![Gen 0](dev_0.png) ![Gen 1](dev_1.png) ![Gen 2](dev_2.png)
 
@@ -82,22 +79,9 @@ Same but reproduction modifier. Note: average phenotype is increasing AND modifi
 
 ![Gen 0](rep_0.png) ![Gen 1](rep_1.png) ![Gen 2](rep_2.png)
 
-Same as above but with the 15% mut bias, developmental modifier:
+Same as above but with the 15% mut bias, developmental modifier: https://www.dropbox.com/scl/fi/nrg4ofnb3qb9h7w6rxjoy/myvid.mp4?rlkey=e9cfucynwxqml9hxcklcwjyr8&dl=0.
 
-```{r}
-library(embedr)
-embed_video(
-  "myvid.mp4",
-  type = "mp4",
-  width = "320",
-  height = "240",
-  attribute = c("controls", "autoplay", "loop", "muted", "preload", "none"),
-  thumbnail = NULL,
-  id = "",
-  placeholder = ""
-)
-```
-
+![IMAGE ALT TEXT HERE](kacsa.jpeg)](https://www.dropbox.com/scl/fi/nrg4ofnb3qb9h7w6rxjoy/myvid.mp4?rlkey=e9cfucynwxqml9hxcklcwjyr8&dl=0)
 
 ## Results
 
@@ -113,15 +97,15 @@ Main take-home:
 
 -   when the selection pressure is medium or high, dev and repr appear to behave similarly. when the selection pressure is lower, repr modifier still succeeds, but not the dev modifier. except for when the mutation rates are balanced. makes sense. when the selection pressure is low, modifiers with high fitnesses have less of an advantage. when the props worsen repr modifier can still succeed because it can maintain the advantage, but the dev can't.
 
-- as expected, as I increase the probability of negative mutations, modifiers struggle more.
+-   as expected, as I increase the probability of negative mutations, modifiers struggle more.
 
-- dev modifiers do slightly better than repr modifiers at higher selection pressures? weird.
+-   dev modifiers do slightly better than repr modifiers at higher selection pressures? weird.
 
 Now, let's plot the same results but with number of generations to fixation on the y axis. so, out of the times that the high noise modifier won, on average, how many generations did it take to win?
 
 ![Fixation time](conv_time2.png)
 
-If the bars go up to 500, it means that they didn't end up fixing in the population. 
+If the bars go up to 500, it means that they didn't end up fixing in the population.
 
 To be able to see the tiny bars, here is the same plot but with ylim set to 120.
 
@@ -129,24 +113,16 @@ To be able to see the tiny bars, here is the same plot but with ylim set to 120.
 
 There is not as much to conclude here but I wanted to point out that:
 
-- For pop size 10.000, medium and high selection pressure, even though both kinds of modifiers won 100% of the time, here you can see that dev modifiers take longer.
+-   For pop size 10.000, medium and high selection pressure, even though both kinds of modifiers won 100% of the time, here you can see that dev modifiers take longer.
 
-- For pop size 1.000, even though dev modifier won higher percentage of the time, they fixed in the population later. They just need more time it seems.
+-   For pop size 1.000, even though dev modifier won higher percentage of the time, they fixed in the population later. They just need more time it seems.
 
 FYI just to illustrate the differences in selection pressures, these are the 3 settings I tested. Blue selected for reproduction. Right distributions: distribution of phenotypes of selected and not selected individuals. As you can see, when the selection pressure is really high (20) the low noise modifiers have basically no chance. In this case, only the best of the best are selected for reproduction, and it is much more likely that that is going to the a high noise modifier rather than a low noise modifier.
 
 Selection pressures low, medium and high in this order:
 
-![Sel pres 2](sel_2.png)
-![Sel pres 10](sel_10.png)
-![Sel pres 20](sel_20.png)
-
+![Sel pres 2](sel_2.png) ![Sel pres 10](sel_10.png) ![Sel pres 20](sel_20.png)
 
 ## Conclusion
 
 I am quite satisfied with this! Of course, there are a lot of things I have ignored (e.g. that repr modifiers could have smaller effect than dev modifiers??), and I am sure you all could think of better ways of modeling the various parts of the evolution of modifiers. However, I do think it is an interesting toy model with explainable results that largely align with our intuition. What do you think?
-
-
-
-
-
