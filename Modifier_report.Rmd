@@ -67,19 +67,19 @@ def experiment(modi_prop, num_gens, pop_size, mut_bias, sel_pressure, repr=True)
 
 That is it! So in English, I create a bunch of individuals that all start from the same genotype/phenotype (simply a float), some of which are high noise modifiers, meaning that when it comes to creating variation, they draw from a wider distribution. Then, each generation, I modify the genotype/phenotype (the single float) of each individual, I calculate their fitnesses (higher the better), I select who reproduces and how many times, and I replace the population with copies of the selected individuals. Repeat. If I am simulating a modifier of reproduction, the "creating variation" step corresponds to development, and when I am replacing the population, the new phenotypes is not inherited. So, the average phenotype doesn't change in the population over time. On the other hand, if I am simulating a modifier of development, the "creating variation" step corresponds to mutations followed by phenotypic differences due to those mutations, and thus the new phenotypes get inherited. Thus, the average phenotype increases in the population over time.
 
-Here are some visualisations to illustrate the point. Developmental modifier, Blue high noise modifier, orange low noise modifier, triangle selected for reproduction. Density plot on the right: distribution of phenotypes for each of the modifier alleles. Blue is wider but the mean is the same, as in this run prob of negative and positive mutation were the same. note no change in average phenotype over time. y axis: phenotype, x axis: index of the individual in the population, ignore.
-
 With mut_bias == 1, 15% of the variation will be positive, for both high and low noise modifiers. I think this makes sense, but I am curious to hear what you think of this choice. Below are the distributions the random "mutations" are drawn from.
 
 ![Distributions](distrs.png)
 
+Here are some visualisations to illustrate the point. Developmental modifier, Blue high noise modifier, orange low noise modifier, triangle selected for reproduction. Density plot on the right: distribution of phenotypes for each of the modifier alleles. Blue is wider but the mean is the same, as in this run prob of negative and positive mutation were the same. note no change in average phenotype over time. y axis: phenotype, x axis: index of the individual in the population, ignore.
+
 ![Gen 0](dev_0.png) ![Gen 1](dev_1.png) ![Gen 2](dev_2.png)
 
-Same but reproduction modifier. Note: average phenotype is increasing AND modifiers are able to gain more of an advantage then before. intuitive, they get to keep the advantage over the generations.
+Below same but reproduction modifier. Note: average phenotype is increasing AND modifiers are able to gain more of an advantage then before. intuitive, they get to keep the advantage over the generations.
 
 ![Gen 0](rep_0.png) ![Gen 1](rep_1.png) ![Gen 2](rep_2.png)
 
-Same as above but with the 15% mut bias, developmental modifier: https://www.dropbox.com/scl/fi/nrg4ofnb3qb9h7w6rxjoy/myvid.mp4?rlkey=e9cfucynwxqml9hxcklcwjyr8&dl=0.
+Same as above but with the 15% mut bias, developmental modifier: <https://www.dropbox.com/scl/fi/nrg4ofnb3qb9h7w6rxjoy/myvid.mp4?rlkey=e9cfucynwxqml9hxcklcwjyr8&dl=0>.
 
 To illustrate the differences in selection pressures, these are the 3 settings I tested. Blue selected for reproduction. Right distributions: distribution of phenotypes of selected and not selected individuals. As you can see, when the selection pressure is really high (20) the low noise modifiers have basically no chance. In this case, only the best of the best are selected for reproduction, and it is much more likely that that is going to the a high noise modifier rather than a low noise modifier.
 
@@ -87,8 +87,21 @@ Selection pressures low, medium and high in this order:
 
 ![Sel pres 2](sel_2.png) ![Sel pres 10](sel_10.png) ![Sel pres 20](sel_20.png)
 
-## Results
+## Main results
 
+All my results point to the same main conclusion. The success of the high noise modifier depends on whether or not the positive phenotypes it generates "matter enough" to outweigh the effect of the negative phenotypes. There are many things that can influence this balance.
 
+-   Is the phenotype heritable? If it is, the positive phenotype can matter more, as it can benefit the lineage for a longer period of time. In the case of reproduction modifiers, since positive phenotypes can be inherited, the high noise modifiers can get ahead of the low noise modifiers over time, and their mean phenotype could increase above the mean phenotype of the low noise modifiers. Thus, in later generations, they can start from a high point and so even if they get some bad mutations, they can still end up better off.
 
+    -   Evidence: Well, the plots above already show this. Also, you can play with my visualisation tool <https://petakcsenge.shinyapps.io/test_shiny/> using the dataset available here: <https://github.com/Cpetak/cpetak.github.io/blob/master/eugene_sim_res_mutnomut.csv> and it will become apparent that the reproduction modifier wins in a wider subset of the parameter space than the developmental modifier.
 
+-   This brings us to the second biggest factor that influences the success of the high noise modifier. Selection pressure. If the selection pressure is high, both kinds of modifiers have an easier time going to fixation. This is because with a high selection pressure, high fitness individuals get an unproportional boost in the probability of being selected, thus, if this boost is big enough, it can outweigh the effect of negative mutations. When only the top of the top gets selected, being in the top matters more, and as I wrote earlier, it is all about having the high fitness phenotypes "matter enough".
+
+    -   Evidence: Plot below shows evidence for the first 2 claims. y axis is the percentage of the runs that ended with the high noise modifier going to fixation, starting from a population where half of the population is the high noise modifier. Increasing selection pressure helps both kinds of modifiers. Since developmental modifiers don't get to inherit benefitial phenotypes, they only go to fixation at higher selection pressure settings. ![Effect of selection pressure](dev_vs_repr.png)
+
+## Collection of other results
+
+### The "illusion" of short vs long-term selection
+Switching off mutations reveals what is really happening. See shinyapp visualisation linked above.
+
+### The actual effect of long-term selection: aka the effect of environmental variation.
