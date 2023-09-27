@@ -97,11 +97,22 @@ All my results point to the same main conclusion. The success of the high noise 
 
 -   This brings us to the second biggest factor that influences the success of the high noise modifier. Selection pressure. If the selection pressure is high, both kinds of modifiers have an easier time going to fixation. This is because with a high selection pressure, high fitness individuals get an unproportional boost in the probability of being selected, thus, if this boost is big enough, it can outweigh the effect of negative mutations. When only the top of the top gets selected, being in the top matters more, and as I wrote earlier, it is all about having the high fitness phenotypes "matter enough".
 
-    -   Evidence: Plot below shows evidence for the first 2 claims. y axis is the percentage of the runs that ended with the high noise modifier going to fixation, starting from a population where half of the population is the high noise modifier. Increasing selection pressure helps both kinds of modifiers. Since developmental modifiers don't get to inherit benefitial phenotypes, they only go to fixation at higher selection pressure settings. ![Effect of selection pressure](dev_vs_repr.png)
+    -   Evidence: Plot below shows evidence for the first 2 claims. y axis is the percentage of the runs that ended with the high noise modifier going to fixation, starting from a population where half of the population is the high noise modifier. Increasing selection pressure helps both kinds of modifiers. Since developmental modifiers don't get to inherit benefitial phenotypes, they only go to fixation at higher selection pressure settings. (pop size = 1000, mutation bias = 2) ![Effect of selection pressure](dev_vs_repr.png)
+
+-   Population size is another factor that determines how far a really good phenotype can get you. However, this point is far more complicated than I initially thought. It turns out changing the population size influences the dynamics of the population genetics of modifier alleles in various different ways, and sometimes unexpectedly. WIP detailed explanation, but I do have an explanation :) and figures.
+
+WIP Starting with 1%? effect of pop size?
 
 ## Collection of other results
 
 ### The "illusion" of short vs long-term selection
-Switching off mutations reveals what is really happening. See shinyapp visualisation linked above.
+
+Switching off mutations reveals what is really happening. See shinyapp visualisation linked above. Some lineages will start from a good mutation, but they are a minority, so it takes some time for them to grow (but they do 'deterministically', monotonically, +- drift but no down and then up necesseraliy) while all the other modifier lineages are going extinct so the overall frequency of the modifier decreases at first, but then increases later. This doesn't happen with the dev modifier because the parameters are either good enough for the high noise modifier to spread, or not. There can't be "hidden" lineages that are slowly taking over "in secret" like it is the case with the reproduction modifiers.
 
 ### The actual effect of long-term selection: aka the effect of environmental variation.
+
+What happens if the proportion of benefitial phenotypes dynamically changes. So far, we have only considered the case where the proportion of good phenotypes is *always* 15% or 2%.
+
+### Other things I tested for future reference
+
+I tested whether things would look different if I did truncation selection instead of fitness proportional selection. Not really. It is complicated. So I just stick with fitness proportional selection. I also tested the effect of rescaling the phenotypes to be between 0 and 1. No effect thankfully.
