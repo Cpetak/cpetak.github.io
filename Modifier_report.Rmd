@@ -114,8 +114,8 @@ In some parameter settings, we observed that the frequency of the reproductive h
 
 ### The actual effect of long-term selection: aka the effect of environmental variation.
 
-What happens if the proportion of benefitial phenotypes dynamically changes. So far, we have only considered the case where the proportion of good phenotypes is *always* 15% or 2%.
+What happens if the proportion of beneficial to deleterious phenotypes dynamically changes? For example, if the population is getting closer to a fitness optimum over the generations? (Only applicable to reproductive modifiers in this simulation.) So far, we have only considered the case where the proportion of good phenotypes is *always* 15% or 2%. Well, as you might expect, if the high noise modifier manages to go to fixation quickly, it doesn't matter that the proportion of positive mutations is decreasing since there is no longer any competition. However, if there are still some low noise modifiers left when the population gets close to a fitness optimum, after some initial increase in frequency of the high noise allele, it eventually goes extinct. WIP
 
 ### Other things I tested for future reference
 
-I tested whether things would look different if I did truncation selection instead of fitness proportional selection. Not really. It is complicated. So I just stick with fitness proportional selection. I also tested the effect of rescaling the phenotypes to be between 0 and 1. No effect thankfully.
+I tested whether things would look different if I did truncation selection instead of fitness proportional selection. Not really. It is complicated. So I just stick with fitness proportional selection. I also tested the effect of re-scaling the phenotypes to be between 0 and 1. No effect thankfully.
