@@ -71,7 +71,11 @@ With mut_bias == 1, 15% of the variation will be positive, for both high and low
 
 ![Distributions](distrs.png)
 
-Here are some visualisations to illustrate the point. Developmental modifier, Blue high noise modifier, orange low noise modifier, triangle selected for reproduction. Density plot on the right: distribution of phenotypes for each of the modifier alleles. Blue is wider but the mean is the same, as in this run prob of negative and positive mutation were the same. note no change in average phenotype over time. y axis: phenotype, x axis: index of the individual in the population, ignore.
+However, now that I think about it, this is not how Dan drew the fitness distribution in Fig 2. In his case, 50% of the mutations are beneficial, but most beneficial mutations have small effect. Instead, the 50% that is disadvantageous have a high effect size. Hence, the average in negative. See below. Orange horizontal line: range of phenotypes randomly drawn for high noise modifier, blue horizontal line: range of phenotypes randomly drawn for low noise modifier. Right column: The distribution of fitnesses that correspond to those phenotypes.
+
+![Dans distributions](dd4.png)
+
+Below are some visualisations to illustrate some of the points above. Developmental modifier, Blue high noise modifier, orange low noise modifier, triangle selected for reproduction. Density plot on the right: distribution of phenotypes for each of the modifier alleles. Blue is wider but the mean is the same, as in this run prob of negative and positive mutation were the same. note no change in average phenotype over time. y axis: phenotype, x axis: index of the individual in the population, ignore.
 
 ![Gen 0](dev_0.png) ![Gen 1](dev_1.png) ![Gen 2](dev_2.png)
 
