@@ -1,0 +1,51 @@
+---
+title: "Microinjection protocol"
+output: html_document
+date: "2023-09-05"
+---
+
+## Collecting eggs and sperm
+
+1. Prepare a small beaker (TODO size in ml) with sea water (12&deg;C, RO + instant ocean salt). Filter with an 80um mesh. Label as “filtered sea water”. Check for correct salinity (~33%)! Pour 25 ml of the filtered sea water into a 50 ml centrifuge tube and add 25ul of 1M 3-aminotriazole (3-AT) stock solution^[Prepare 1 M stock solution of 3-aminotriazole (3-AT, MW = 84.08) by dissolving 0.84 g of 3-AT in 10 ml of ddH2O. This solution can be stored at 4 °C for up to 6 months.] to it. “Label as 3AT filtered sea water”. Place the 3AT sea water on ice.
+
+TODO: PICTURE OF FILTERING, beaker with sea water, tube with 3AT sea water
+
+2. Fill a syringe with 1ml of 0.5 M KCl solution, twist on needle.
+
+TODO: picture of injection needle.
+
+3. Take a new, clean small beaker and fill it almost to the brim with the filtered sea water.
+
+4. Select an urchin and use the net to take it out from the tank.
+
+5. Hold urchin upside down in one hand, hold firmly, and shake the urchin confidently. 
+
+TODO: video
+
+6. Place urchin upside down on small full beaker. Make sure that the genital pores are submerged in water. Wait 3-5 minutes. Check for white substance in water regularly. 
+
+7. If no spawning is initated, repeat steps 5 and 6. If you still don't see any sperm or egg appear, hold urchin upside down in one hand, and inject ~0.5 ml of KCl solution with the other hand. Make sure that you are injecting into the soft part around the mouth, roughly at 3 separate spots. Shake gently.
+
+TODO: photos
+
+8. Repeat step 6. Continue to shake gently / inject more KCl if no spawning is initiated. White substance should be slowing dropping in water.
+
+9. If the white substance looks like white paint mixed in water, lift urchin, shake gently to remove excess water, and use a 10ul pipette to pipette sperm into 1.5ml tube. Collect as much as possible (however, small amount should be enough in most cases). Try NOT to mix the sperm with sea water.
+
+10. If white (yellowish) substance is visible in “droplets”, leave urchin as it is, submerged upside down on small beaker. Eggs will be collected on the bottom.
+
+11. After enough eggs or sperm is collected, place the urchin back into the tank it came from.
+
+12. Place sperm/eggs on ice. Note time (hour and minutes) in lab book. Label both eggs and sperm.
+
+13. Filter the eggs from debris such as animal spines using 80 um nylon filter mesh. The best results are achieved if the eggs are used within 5-7 hr after spawning. Keep filtered eggs on ice.
+
+14. Dejelly eggs by pouring them through 80um mesh 3 times from 3 cm about tube opening. Too far up -> eggs will break. Too close -> they won’t be dejellied and will move around in petri dish during the microinjections.
+
+15. Place the filtered sea water in the 15&deg;C fridge. EGGS IN THE FRIDGE
+
+## Microinjections
+
+Protocol for preparing ingredients/equipment: 
+
+
