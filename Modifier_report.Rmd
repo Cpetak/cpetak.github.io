@@ -137,3 +137,7 @@ What happens if the proportion of beneficial to deleterious phenotypes dynamical
 ### Other things I tested for future reference
 
 I tested whether things would look different if I did truncation selection instead of fitness proportional selection. Not really. It is complicated. So I just stick with fitness proportional selection. I also tested the effect of re-scaling the phenotypes to be between 0 and 1. No effect thankfully.
+
+Recombination rate (high recombination rate with inheritance is worse than no inheritance)
+
+new way of modeling the mutational bias (50-50 good and bad mutations but bad mutations have a bigger fitness effect, should not affect the results)
