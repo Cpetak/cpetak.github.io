@@ -70,9 +70,18 @@ knitr::include_graphics(c("micro_photos/included/filter_on_tube.jpg","micro_phot
 knitr::include_graphics(c("micro_photos/included/dejellying.jpg"))
 ```
 
-15. Place the filtered sea water in the 15&deg;C fridge. EGGS IN THE FRIDGE
+15. Place the filtered sea water in the 15&deg;C fridge. Sperm can be stored in a 4&deg;C fridge for a few days. Eggs can be stored in a 4&deg;C fridge for 24 hours with the addition of antibiotics (50 ul of 10 mg/ml ampicillin to 10 ml of sea water with eggs).
 
 ## Microinjections
+
+### Preparation of injection solution and needle
+
+| Item              | In Stock | Price |
+| :---------------- | :------: | ----: |
+| Python Hat        |   True   | 23.99 |
+| SQL Hat           |   True   | 23.99 |
+| Codecademy Tee    |  False   | 19.99 |
+| Codecademy Hoodie |  False   | 42.99 |
 
 ## Alternative methods
 
