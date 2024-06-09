@@ -41,7 +41,8 @@ GitHub repos?
 
 ## Key research interests
 
-* **Computational epidemiology**: agent-based modelling, disease-avoidant behaviours, epidemics over dynamic networks, geospatial computational epidemiology -- all primarily in the context of infectious diseases
+* **Evolvability**
+* **Evolution of development**
 
 
 ## Hobbies
