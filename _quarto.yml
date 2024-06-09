@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  title: "Csenge Petak"
+  description: "Hello test 1."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: papers.qmd
+        text: Papers / projects
+      - href: CV.html
+        text: CV
+  page-footer:
+    left: "(c) Csenge Petak, 2024"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    toc: true
+    toc_depth: 2
+    toc_float: false
+    toc_smooth_scroll: true
+    toc_highlight: true
+    fig-align: center
+    grid:
+      sidebar-width: 1px
+      body-width: 2000px
+    

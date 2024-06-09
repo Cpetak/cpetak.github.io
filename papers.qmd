@@ -1,0 +1,15 @@
+---
+title: Papers
+---
+
+# 2024
+
+- **Petak, C.**, Frati, L., Pespeni, M. H., & Cheney, N. (2023). Coping with seasons: evolutionary dynamics of gene networks in a changing environment. In Proceedings of the Companion Conference on Genetic and Evolutionary Computation (pp. 163-166).
+
+# 2023
+
+- **Petak, C.**, Frati, L., Brennan, R. S., & Pespeni, M. H. (2023). Whole-genome sequencing reveals that regulatory and low pleiotropy variants underlie local adaptation to environmental variability in purple sea urchins. The American Naturalist, 202(4), 571-586.
+
+# 2019
+
+- Bunford, N., Csibra, B., **Peták, C.**, Ferdinandy, B., Miklósi, Á., & Gácsi, M. (2019). Associations among behavioral inhibition and owner-rated attention, hyperactivity/impulsivity, and personality in the domestic dog (Canis familiaris). Journal of comparative psychology, 133(2), 233.

@@ -1,0 +1,52 @@
+---
+title: "Csenge Petak"
+about:
+    template: trestles
+    image-width: 15em
+    image-shape: round
+    links:
+        - icon: linkedin
+          text: LinkedIn
+          url: https://www.linkedin.com/in/csenge-petak-80956512a
+        - icon: github
+          text: Github
+          url: https://github.com/Cpetak
+        - text: "{{< fa envelope >}} csengepk@gmail.com"
+          url: mailto:csengepk@gmail.com
+image: img/csenge_petak_photo.jpg
+comments: false
+---
+
+
+## Bio
+
+Interested in. Finishing my PhD.
+
+PhD about.
+
+You can find a [list of my publications here](papers).
+
+(Background. Southampton, UVM.)
+
+## Research related resources
+
+Check out my Principles of Complex Systems final project [Here](https://cpetak.github.io/POCS.html), my Data Science final project [Here](https://cpetak.github.io/DS.html), or my Evolutionary Computation final project [Here](https://cpetak.github.io/EC.html).
+
+[Here](https://cpetak.github.io/Modifier_report.html) are my modifier results.
+
+[Here](https://cpetak.github.io/microinjection_protocol/) is the microinjection protocol.
+
+WGS data?
+
+GitHub repos?
+
+
+## Key research interests
+
+* **Computational epidemiology**: agent-based modelling, disease-avoidant behaviours, epidemics over dynamic networks, geospatial computational epidemiology -- all primarily in the context of infectious diseases
+
+
+## Hobbies
+
+Geocaching, climbing.
+
