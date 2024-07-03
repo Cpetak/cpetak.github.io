@@ -34,6 +34,14 @@ Check out my Principles of Complex Systems final project [Here](https://cpetak.g
 
 [Here](https://cpetak.github.io/microinjection_protocol/) is the microinjection protocol.
 
+https://cpetak.github.io/Filter_changes.pdf
+
+https://cpetak.github.io/Urchin_care_protocol.pdf
+
+https://cpetak.github.io/Urchin_system_set-up.pdf
+
+
+
 WGS data?
 
 GitHub repos?
