@@ -4,16 +4,17 @@ project:
   execute-dir: project
 
 website:
-  title: "Csenge Petak"
+  title: "![](docs/img/logo.svg){width=0.5in}    Csenge Petak"
   description: "Hello test 1."
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: papers.qmd
-        text: Papers / projects
+        text: Papers
       - href: CV.html
         text: CV
+      
   page-footer:
     left: "(c) Csenge Petak, 2024"
 

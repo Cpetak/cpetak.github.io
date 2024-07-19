@@ -18,13 +18,13 @@ comments: false
 ---
 
 
-## Bio
+## Bio 
 
 I am a finishing PhD student at the University of Vermont, USA. I am interested in artificial life, the evolution of evolvability and development.
 
-### Computational models
+My PhD aims to investigate evolutionary dynamics in variable environments using computational models and whole-genome sequence analysis. So far, my main results can be summarized as highlighting the importance of the interaction between the genotype-phenotype map and the fitness landscape. In my models of gene regulatory networks, this determined the effect environmental variability had on the evolving populations. Similarly, genetic variation involved in local adaptation to pH variability in sea urchin populations were found in genomic regions influencing the genotype-phenotype map. 
 
-As part of my PhD thesis research, I have developed the following computational models:
+## Published research
 
 1. Simple gene regulatory networks in a variable environment first evolved such that a few mutations could result in switching between phenotypes optimal in alternative environments - diversifying **bet-hedgers** reduced risk by making sure at least some of their offspring would be fit regardless of an unexpected environmental change. However, we found this strategy was quickly outcompeted by a more conservative strategy that only produced offspring with a phenotype intermediate between the two alternative optimal phenotypes. We think that this was due to the properties of the **genotype landscape** underlying these strategies. Published peer-reviewed [paper](https://arxiv.org/abs/2307.01602).
 
@@ -34,31 +34,7 @@ As part of my PhD thesis research, I have developed the following computational 
 Effect of mutations on an evolved conservative and diversifying bet-hedger GRN in the 3D space of strategies. Lines represent the different random walks. The conservative BH is more robust than the diversifying BH.
 :::
 
-2. Using cellular automata (CA) rules to generate a set of **target developmental trajectories**, we found that the effect of environmental variability depended on the specific CA rule that was used. Frequently changing the environment had a negative effect on the maximum fitness the population could reach in some cases, while in other cases, varying the environments resulted in the populations reaching higher fitness peaks. Again, these results show that evolutionary dynamics in varying environments depend on the **genotype landscape**. This work is in review. 
-
-::: {#fig-elephants layout-ncol=2}
-
-![](docs/img/2d_plastic.png){width=4in}
-
-![](docs/img/2d_examples.png){width=3in}
-
-Left: Difference in maximum fitnesses after evolution in a variable environment compared to evolution in the first environment alone (x-axis) and in the second environment alone (y-axis), averaged across replicates. The two columns on the right are showing the two specific target patterns for each rule that was used in the evolutionary algorithm. Right: Maximum fitness in the population over time for
-different CA rules to highlight behaviors for all four quadrants in the left figure.
-:::
-
-3. A two-loci population genetic model showed that an allele that **increases phenotypic variability**, that is usually considered a good strategy in a variable environment, **can also be selected for** in static environments under some circumstances, even if the average effect of the variation is negative, and the new phenotypic traits are not heritable. We found that increasing the selection pressure helped this allele spread, and that the population size had an interesting non-linear effect on the probability of fixation, tightly related to heritability. Manuscript in preparation.
-
-::: {#fig-elephants layout-ncol=1}
-
-![](docs/img/lineages.png){width=5in fig-align="center"}
-
-Example run with no inheritance. Increase variability (blue) and wild-type (orange) lineages. Even though less blue carriers have offspring, the ones that do have a lot of offspring under high selection pressure conditions, offsetting the average negative effect.
-
-:::
-
-### Purple sea urchin work
-
-1. By **whole-genome sequencing** a 140 purple sea urchins collected from seven populations experiencing different levels of environmental variability, I generated a very useful resource to investigate the structure and genetic diversity of these marine populations, as well as to find genetic variation putatively involved **local adaptation to environmental variability**. Interestingly, we found that such genetic variation was mostly regulatory and found in regions predicted to have phenotypic effects with low levels of **pleiotropy**. Published peer-reviewed [paper](https://www.journals.uchicago.edu/doi/10.1086/726013).
+2. By **whole-genome sequencing** a 140 purple sea urchins collected from seven populations experiencing different levels of environmental variability, I generated a very useful resource to investigate the structure and genetic diversity of these marine populations, as well as to find genetic variation putatively involved **local adaptation to environmental variability**. Interestingly, we found that such genetic variation was mostly regulatory and found in regions predicted to have phenotypic effects with low levels of **pleiotropy**. Published peer-reviewed [paper](https://www.journals.uchicago.edu/doi/10.1086/726013).
 
 ::: {#fig-elephants layout-ncol=1}
 
@@ -67,34 +43,34 @@ Example run with no inheritance. Increase variability (blue) and wild-type (oran
 Protein-protein interaction network showing that genetic variation involved in local adaptation (larger nodes) are less central and therefore are less likely to have highly pleiotropic effects.
 :::
 
-## Research related resources
+## Class final projects
 
-Check out my Principles of Complex Systems final project [Here](https://cpetak.github.io/POCS.html), my Data Science final project [Here](https://cpetak.github.io/DS.html), or my Evolutionary Computation final project [Here](https://cpetak.github.io/EC.html).
+Foundations of Quantitative Reasoning [pdf](https://tsoleary.github.io/projects_page/season_adapt.pdf)\
+Title: *The effects of linkage disequilibrium on maintaining balanced polymorphisms in seasonal adaptation*
 
-[Here](https://cpetak.github.io/Modifier_report.html) are my modifier results.
+Evolutionary Computation [pdf](https://cpetak.github.io/EC.html)\
+Title: *The evolution of gene regulatory networks in variable environments*
 
-[Here](https://cpetak.github.io/microinjection_protocol/) is the microinjection protocol.
+Principles of Complex Systems [pdf](https://cpetak.github.io/POCS.html)\
+Title: *The evolution of gene regulatory networks in variable environments*
 
-https://cpetak.github.io/Filter_changes.pdf
-
-https://cpetak.github.io/Urchin_care_protocol.pdf
-
-https://cpetak.github.io/Urchin_system_set-up.pdf
-
-
-
-WGS data?
-
-GitHub repos?
+Data Science I [pdf](https://cpetak.github.io/DS.html)\
+Title: *The evolution of gene regulatory networks in variable environments*
 
 
-## Key research interests
+## Resources
 
-* **Evolvability**
-* **Evolution of development**
+- Whole-genome sequence data available here: [BioProject PRJNA674711](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA674711)
+
+- [Protocol](https://cpetak.github.io/microinjection_protocol/) for microinjection of reporter constructs into sea urchin fertilized eggs
+
+- General urchin care information: [Filter changes](https://cpetak.github.io/Filter_changes.pdf), [Cleaning/feeding](https://cpetak.github.io/Urchin_care_protocol.pdf), [Technical set-up](https://cpetak.github.io/Urchin_system_set-up.pdf)
 
 
-## Hobbies
 
-Geocaching, climbing.
+
+
+
+
+
 
