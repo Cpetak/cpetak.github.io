@@ -5,6 +5,7 @@ title: Papers
 # 2024
 
 - **Petak, C.**, Frati, L., Pespeni, M. H., & Cheney, N. (2023). Coping with seasons: evolutionary dynamics of gene networks in a changing environment. In Proceedings of the Companion Conference on Genetic and Evolutionary Computation (pp. 163-166).
+[Link to paper](https://arxiv.org/abs/2307.01602)
 
 # 2023
 
