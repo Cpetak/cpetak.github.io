@@ -22,7 +22,7 @@ comments: false
 
 I am a finishing PhD student at the University of Vermont, USA. I am interested in artificial life, the evolution of evolvability and development.
 
-My PhD aims to investigate evolutionary dynamics in variable environments using computational models and whole-genome sequence analysis. So far, my main results can be summarized as highlighting the importance of the interaction between the genotype-phenotype map and the fitness landscape. In my models of gene regulatory networks, this determined the effect environmental variability had on the evolving populations. Similarly, genetic variation involved in local adaptation to pH variability in sea urchin populations were found in genomic regions influencing the genotype-phenotype map. 
+My PhD aims to investigate evolutionary dynamics in variable environments using computational models and whole-genome sequence analysis. My main results highlight the importance of the interaction between the genotype-phenotype map and the fitness landscape. In my models of gene regulatory networks, this interaction determined the effect environmental variability had on the evolving populations. Similarly, genetic variation involved in local adaptation to pH variability in sea urchin populations were found in genomic regions influencing the genotype-phenotype map. 
 
 ## Published research
 
