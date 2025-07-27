@@ -49,13 +49,13 @@ Foundations of Quantitative Reasoning [pdf](https://tsoleary.github.io/projects_
 Title: *The effects of linkage disequilibrium on maintaining balanced polymorphisms in seasonal adaptation*
 
 Evolutionary Computation [pdf](https://cpetak.github.io/EC.html)\
-Title: *The evolution of gene regulatory networks in variable environments*
+Title: *Comparing different implementations of the classical gene regulatory network evolutionary model: the start of an exploration*
 
 Principles of Complex Systems [pdf](https://cpetak.github.io/POCS.html)\
 Title: *The evolution of gene regulatory networks in variable environments*
 
 Data Science I [pdf](https://cpetak.github.io/DS.html)\
-Title: *The evolution of gene regulatory networks in variable environments*
+Title: *Signatures of adaptation to environmental variability in the protein-protein interaction network*
 
 
 ## Resources
