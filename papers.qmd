@@ -2,6 +2,13 @@
 title: Papers
 ---
 
+# 2025
+
+- **Petak, C.**, Frati, L., Vroomans, R. M., Pespeni, M. H., and Cheney, N. (2025). The variability of evolvability: properties of dynamic fitness landscapes determine how phenotypic variability evolves. bioRxiv, 2025-07.
+[Link to paper](https://www.biorxiv.org/content/10.1101/2025.07.02.662714v2)
+
+- Weinreich, D. M., Sgouros, T., Raynes, Y., Burtsev, H., Chang, E., Rajakumar, S., Bravo, I.G. and **Petak, C.** (2025). The Population Genetics of Biological Noise. bioRxiv, 2025-01.
+
 # 2024
 
 - Frati, L., **Petak, C.**, & Cheney, N. (2024). Networks of Binary Necklaces Induced by Elementary Cellular Automata Rules. Artificial Life.
@@ -18,3 +25,5 @@ title: Papers
 # 2019
 
 - Bunford, N., Csibra, B., **Peták, C.**, Ferdinandy, B., Miklósi, Á., & Gácsi, M. (2019). Associations among behavioral inhibition and owner-rated attention, hyperactivity/impulsivity, and personality in the domestic dog (Canis familiaris). Journal of comparative psychology, 133(2), 233.
+
+
