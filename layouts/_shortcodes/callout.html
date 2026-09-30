@@ -1,0 +1,16 @@
+{{- /* Callout box, modelled on Quarto's callouts.
+       {{< callout title="Ingredients" type="tip" collapse=true >}} ...markdown... {{< /callout >}}
+       type: tip (default) | note | warning */ -}}
+{{- $type := .Get "type" | default "tip" -}}
+{{- $title := .Get "title" -}}
+{{- if .Get "collapse" }}
+<details class="callout callout-{{ $type }}">
+  <summary>{{ $title | default "Details" | markdownify }}</summary>
+  <div class="callout-body">{{ .Inner | markdownify }}</div>
+</details>
+{{- else }}
+<div class="callout callout-{{ $type }}">
+  {{- with $title }}<div class="callout-title">{{ . | markdownify }}</div>{{ end }}
+  <div class="callout-body">{{ .Inner | markdownify }}</div>
+</div>
+{{- end }}

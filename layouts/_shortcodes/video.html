@@ -1,0 +1,6 @@
+{{- /* Overrides PaperMod's video shortcode to add a caption and width.
+       {{< video src="vid/clip.mp4" caption="What it shows" width="500" >}} */ -}}
+<figure class="video-figure">
+  <video src="{{ .Get "src" }}" controls muted playsinline preload="metadata"{{ with .Get "width" }} width="{{ . }}"{{ end }}></video>
+  {{- with .Get "caption" }}<figcaption><p>{{ . | markdownify }}</p></figcaption>{{ end }}
+</figure>

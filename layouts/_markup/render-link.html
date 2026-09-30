@@ -1,0 +1,7 @@
+{{- /* Makes links like /file.pdf respect the baseURL path */ -}}
+{{- $href := .Destination -}}
+{{- if and (strings.HasPrefix $href "/") (not (strings.HasPrefix $href "//")) -}}
+  {{- $href = relURL (strings.TrimPrefix "/" $href) -}}
+{{- end -}}
+<a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text }}</a>
+{{- /**/ -}}

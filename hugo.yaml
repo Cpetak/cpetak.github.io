@@ -1,0 +1,82 @@
+baseURL: https://cpetak.github.io/
+locale: en-US
+title: Csenge Petak
+theme: PaperMod
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 10
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # allow raw HTML inside Markdown
+
+menu:
+  main:
+    - name: About
+      pageRef: /about
+      weight: 10
+    - name: Publications
+      pageRef: /publications
+      weight: 20
+    - name: CV
+      pageRef: /cv
+      weight: 30
+    - name: Posts
+      pageRef: /posts
+      weight: 40
+
+params:
+  env: production
+  description: "Csenge Petak: artificial life, the evolution of evolvability and development."
+  author: Csenge Petak
+  mainSections: [posts]
+  defaultTheme: auto
+  ShowReadingTime: false
+  ShowToc: true      # table of contents on posts; sticky sidebar on wide screens
+  TocOpen: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+
+  label:
+    icon: img/logo.svg
+    iconHeight: 30
+
+  assets:
+    favicon: favicon.svg          # circular; browsers without SVG support fall back to the PNGs
+    favicon16x16: favicon-16x16.png
+    favicon32x32: favicon-32x32.png
+    apple_touch_icon: apple-touch-icon.png
+    safari_pinned_tab: img/logo.svg
+
+  profileMode:
+    enabled: true
+    title: Csenge Petak, PhD
+    subtitle: "Artificial life, the evolution of evolvability and development"
+    imageUrl: img/csenge_petak_photo.jpg
+    imageTitle: Csenge Petak
+    imageWidth: 150
+    imageHeight: 150
+    buttons:
+      - name: About
+        url: about/
+      - name: Publications
+        url: publications/
+      - name: CV
+        url: cv/
+      - name: Posts
+        url: posts/
+
+  homeCornerLink:
+    text: Art by Lapo Frati
+    url: https://www.fratilapo.com/barelycomplex/
+    title: Open Curriculum Vitae
+
+  socialIcons:
+    - name: linkedin
+      url: https://www.linkedin.com/in/csenge-petak-80956512a
+    - name: github
+      url: https://github.com/Cpetak
+    - name: email
+      url: mailto:csengepk@gmail.com

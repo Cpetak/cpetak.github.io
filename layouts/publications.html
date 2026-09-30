@@ -1,0 +1,27 @@
+{{- define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- with .Description }}<div class="post-description">{{ . }}</div>{{ end }}
+  </header>
+
+  {{- with .Content }}<div class="post-content md-content">{{ . }}</div>{{ end }}
+
+  <div class="timeline">
+    {{- $year := "" }}
+    {{- /* sorted here so grouping never depends on the order in the data file */}}
+    {{- range sort hugo.Data.publications "year" "desc" }}
+      {{- if ne (print .year) $year }}
+        {{- $year = print .year }}
+        <div class="tl-year"><span>{{ $year }}</span></div>
+      {{- end }}
+      <a class="tl-entry" href="{{ .url }}" target="_blank" rel="noopener">
+        <span class="tl-title">{{ .title }}<svg class="tl-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+        <span class="tl-authors">{{ .authors | markdownify }}</span>
+        <span class="tl-venue">{{ .venue }}</span>
+      </a>
+    {{- end }}
+  </div>
+</article>
+{{- end }}

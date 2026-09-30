@@ -1,0 +1,53 @@
+# Publications shown on /publications, newest first.
+# `authors` supports Markdown (used to bold Csenge's name).
+
+
+- year: 2026
+  title: "Signals of Natural Selection Across Regions of Low Recombination in Wild Populations of the Purple Sea Urchin, Strongylocentrotus purpuratus"
+  authors: "**Petak, C.**, Sadler, D. E., Pespeni, M. H., & Nunez, J. C. B."
+  venue: Genome Biology and Evolution
+  url: https://academic.oup.com/gbe/advance-article/doi/10.1093/gbe/evag232/8790382
+
+- year: 2026
+  title: "Hot off the Press: The Variability of Evolvability: Properties of Dynamic Fitness Landscapes Determine how Phenotypic Variability Evolves"
+  authors: "**Petak, C.**, Frati, L., Vroomans, R. M., Pespeni, M. H., & Cheney, N."
+  venue: Proceedings of the Genetic and Evolutionary Computation Conference Companion
+  url: https://dl.acm.org/doi/abs/10.1145/3795101.3814630
+
+- year: 2026
+  title: "Wanted: A population genetic theory of biological noise regulation"
+  authors: "Weinreich, D. M., Sgouros, T., Raynes, Y., Burtsev, H., Chang, E., Rajakumar, S., Bravo, I. G., & **Petak, C**."
+  venue: PLoS genetics
+  url: https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1012066
+
+
+- year: 2025
+  title: "The variability of evolvability: properties of dynamic fitness landscapes determine how phenotypic variability evolves"
+  authors: "**Petak, C.**, Frati, L., Vroomans, R. M., Pespeni, M. H., & Cheney, N."
+  venue: "Proceedings of the National Academy of Sciences, 122(51)"
+  url: https://doi.org/10.1073/pnas.2519469122
+
+
+- year: 2024
+  title: "Networks of Binary Necklaces Induced by Elementary Cellular Automata Rules"
+  authors: "Frati, L., **Petak, C.**, & Cheney, N."
+  venue: "Proceedings of the 2024 Conference on Artificial Life (ALIFE)"
+  url: https://doi.org/10.1162/isal_a_00783
+
+- year: 2023
+  title: "Coping with seasons: evolutionary dynamics of gene networks in a changing environment"
+  authors: "**Petak, C.**, Frati, L., Pespeni, M. H., & Cheney, N."
+  venue: "Proceedings of the Companion Conference on Genetic and Evolutionary Computation (GECCO), pp. 163–166"
+  url: https://arxiv.org/abs/2307.01602
+
+- year: 2023
+  title: "Whole-genome sequencing reveals that regulatory and low pleiotropy variants underlie local adaptation to environmental variability in purple sea urchins"
+  authors: "**Petak, C.**, Frati, L., Brennan, R. S., & Pespeni, M. H."
+  venue: "The American Naturalist, 202(4), 571–586"
+  url: https://www.journals.uchicago.edu/doi/10.1086/726013
+
+- year: 2019
+  title: "Associations among behavioral inhibition and owner-rated attention, hyperactivity/impulsivity, and personality in the domestic dog (Canis familiaris)"
+  authors: "Bunford, N., Csibra, B., **Peták, C.**, Ferdinandy, B., Miklósi, Á., & Gácsi, M."
+  venue: "Journal of Comparative Psychology, 133(2), 233–243"
+  url: https://doi.org/10.1037/com0000151

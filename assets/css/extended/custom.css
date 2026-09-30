@@ -1,0 +1,341 @@
+/* The logo is black, make it white in dark mode */
+[data-theme="dark"] .logo img {
+    filter: invert(1);
+}
+
+/* ---- Publications timeline ---- */
+.timeline {
+    --tl-line-x: 9px;   /* horizontal position of the vertical line */
+    position: relative;
+    margin: 32px 0 8px;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: var(--tl-line-x);
+    width: 2px;
+    background: var(--tertiary);
+    border-radius: 1px;
+}
+
+/* Year marker sitting on the line */
+.tl-year {
+    position: relative;
+    margin: 36px 0 14px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--secondary);
+}
+
+.tl-year:first-child {
+    margin-top: 0;
+}
+
+.tl-year::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(-40px + var(--tl-line-x) + 1px);
+    width: 12px;
+    height: 12px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: var(--theme);
+    border: 2px solid var(--secondary);
+    box-sizing: border-box;
+}
+
+/* One paper = one clickable block */
+.tl-entry {
+    position: relative;
+    display: block;
+    padding: 12px 32px 12px 14px;
+    margin: 0 0 10px -14px;
+    border-radius: var(--radius);
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.tl-entry::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: calc(-40px + var(--tl-line-x) + 1px + 14px);
+    width: 8px;
+    height: 8px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: var(--secondary);
+    opacity: 0.7;
+    transition: background 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
+}
+
+.tl-entry:hover {
+    background: var(--code-bg);
+    transform: translateX(3px);
+}
+
+/* The card slides 3px right on hover; shift the dot back so it stays centered on the line */
+.tl-entry:hover::before {
+    background: var(--primary);
+    opacity: 1;
+    transform: translateX(calc(-50% - 3px)) scale(1.3);
+}
+
+.tl-entry > span {
+    display: block;
+}
+
+.tl-title {
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--primary);
+}
+
+.tl-arrow {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    opacity: 0;
+    color: var(--secondary);
+    transition: opacity 0.15s ease;
+}
+
+.tl-entry:hover .tl-arrow {
+    opacity: 0.8;
+}
+
+.tl-authors {
+    margin-top: 4px;
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--content);
+}
+
+.tl-authors strong {
+    color: var(--primary);
+}
+
+.tl-venue {
+    margin-top: 3px;
+    font-size: 13.5px;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+@media (max-width: 500px) {
+    .timeline {
+        padding-left: 28px;
+    }
+    .tl-year::before {
+        left: calc(-28px + var(--tl-line-x) + 1px);
+    }
+    .tl-entry {
+        padding: 10px 10px;
+        margin-left: -10px;
+    }
+    .tl-entry::before {
+        left: calc(-28px + var(--tl-line-x) + 1px + 10px);
+    }
+}
+
+/* ---- Landing page: fitness-landscape shader background ---- */
+#fitness-landscape {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ---- Landing page: subtle bottom-right link ---- */
+.home-corner-link {
+    position: fixed;
+    right: 14px;
+    bottom: 12px;
+    z-index: 10;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    opacity: 0.55;
+    text-decoration: none;
+    transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.home-corner-link:hover {
+    opacity: 0.9;
+    color: var(--primary);
+}
+
+@media (max-width: 640px) {
+    .home-corner-link {
+        right: 10px;
+        bottom: 10px;
+        font-size: 11px;
+    }
+}
+
+/* ---- CV page: embedded PDF with lightweight actions ---- */
+.cv-embed-wrap {
+    --cv-max-width: 1200px;
+    margin-top: 0.5rem;
+    width: min(var(--cv-max-width), calc(100vw - 2rem));
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.cv-actions {
+    margin: 0 0 0.75rem;
+    font-size: 0.95rem;
+    color: var(--secondary);
+}
+
+.cv-actions a {
+    color: var(--primary);
+}
+
+.cv-embed {
+    display: block;
+    width: 100%;
+    min-height: 75vh;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--theme);
+}
+
+@media (max-width: 800px) {
+    .cv-embed-wrap {
+        width: 100%;
+        margin-left: 0;
+        transform: none;
+    }
+
+    .cv-embed {
+        min-height: 68vh;
+    }
+}
+
+/* ---- Callout boxes (used by the callout shortcode) ---- */
+.callout {
+    margin: 1.2em 0;
+    padding: 0.7em 1em;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--callout-color, var(--secondary));
+    background: var(--code-bg);
+}
+
+.callout-tip { --callout-color: #2a9d8f; }
+.callout-note { --callout-color: #4a7ec9; }
+.callout-warning { --callout-color: #e9a23b; }
+
+.callout-title,
+.callout > summary {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.callout > summary {
+    cursor: pointer;
+}
+
+.callout-body > :first-child { margin-top: 0.4em; }
+.callout-body > :last-child { margin-bottom: 0; }
+.callout-body ul, .callout-body ol { margin-bottom: 0; }
+
+/* ---- Figure rows: several figures side by side, stacking on phones ---- */
+.fig-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 1.2em 0;
+}
+
+/* .md-content prefix so these win over the theme's figure/img margins */
+.md-content .fig-row figure,
+.md-content .fig-row figure:not(:last-child) {
+    flex: 1 1 220px;
+    max-width: 420px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.md-content .fig-row figure img,
+.md-content .fig-row .video-figure video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.post-content .video-figure {
+    margin: 1.2em auto;
+    text-align: center;
+}
+
+/* Width comes from the shortcode's width attribute; just keep it on screen. */
+.post-content .video-figure video {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+.fig-row-caption {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: var(--secondary);
+    margin-top: -6px;
+}
+
+/* ---- Sticky table of contents in the left gutter on wide screens ---- */
+/* Needs room for the 768px column (720px + padding) plus a 300px gutter on
+   the left, plus a classic 17px scrollbar: 1360px. */
+@media (min-width: 1360px) {
+    .post-single details.toc {
+        float: left;
+        position: sticky;
+        top: 16px;                /* the header scrolls away, so pin near the top */
+        width: 250px;
+        margin-left: -300px;      /* 250px sidebar + 50px gap, out in the gutter */
+        margin-bottom: 0;
+        max-height: calc(100vh - 32px);
+        overflow-y: auto;
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .post-single details.toc .inner {
+        margin: 0 0.6rem;         /* theme default is 0 2.4rem, too wide for 250px */
+        padding: 0 0 0.6rem;
+    }
+
+    .post-single details.toc li {
+        margin: 0.15em 0;
+    }
+
+    .post-single details.toc a {
+        color: var(--secondary);
+    }
+
+    .post-single details.toc a:hover,
+    .post-single details.toc a.active {
+        color: var(--primary);
+    }
+
+    .post-single details.toc a.active {
+        font-weight: 600;
+    }
+}
